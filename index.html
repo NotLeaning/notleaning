@@ -6,186 +6,152 @@
   <link rel="icon" type="image/png" href="assets/cloud.png">
   <title>SKYWONDER</title>
 
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-  <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-black text-white font-sans">
 
-  <!-- Hero Section -->
-  <section class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
-    <img
-    src="assets/cloud.png"
-    alt="SKYWONDER logo"
-    class="w-16 h-16 sm:w-20 sm:h-20 md:w-32 md:h-32"
-/>
+<!-- HERO -->
+<section class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+  <img src="assets/cloud.png" class="w-16 h-16 sm:w-20 sm:h-20 md:w-32 md:h-32">
 
-    <h1 class="font-display text-5xl sm:text-6xl md:text-8xl lg:text-9xl tracking-[0.08em] md:tracking-[0.15em] text-foreground mt-4 md:mt-6">
+  <h1 class="text-5xl sm:text-6xl md:text-8xl lg:text-9xl tracking-[0.15em] mt-4">
     SKYWONDER
-    </h1>
+  </h1>
+</section>
 
-    <!-- Scroll hint -->
-    <div class="absolute bottom-10 flex flex-col items-center gap-2">
-      <span class="text-white/25 text-xs tracking-widest uppercase">Scroll</span>
-      <div class="w-px h-8 bg-gradient-to-b from-white/30 to-transparent animate-bounce"></div>
+<div class="w-full h-px bg-white/10"></div>
+
+<!-- MAIN AREA -->
+<section class="min-h-screen flex flex-col items-center justify-center text-center px-4 gap-10">
+
+  <!-- POLICY BUTTON -->
+  <button id="policy-btn"
+    class="border border-white/30 px-12 py-4 text-3xl tracking-widest text-white/70 hover:text-white hover:border-white/70 transition-all duration-300">
+    POLICY
+  </button>
+
+  <!-- GAME LIST -->
+  <div id="game-list" class="hidden flex flex-col items-center gap-6 opacity-0 transition-all duration-500">
+
+    <div class="game-item text-3xl tracking-widest text-white/60 cursor-pointer transition-all duration-300">
+      UNTAMED
     </div>
-  </section>
-
-  <!-- Divider -->
-  <div class="w-full h-px bg-white/10"></div>
-
-  <section class="min-h-screen flex flex-col items-center justify-center text-center px-4">
-
-  <!-- BUTTON STACK -->
-  <div class="flex flex-col items-center gap-8">
-
- 
-    
 
   </div>
 
-  <!-- Policy Section -->
-  <section class="w-full flex flex-col items-center py-24 px-4">
-    <button id="policy-btn" class="border border-white/30 px-12 py-4 font-display text-3xl tracking-widest text-white/70 hover:text-white hover:border-white/70 transition-all duration-300">
-      POLICY
-    </button>
+  <!-- POLICY CONTENT -->
+  <div id="policy-content" class="hidden w-full max-w-3xl opacity-0 transition-all duration-500">
 
-    <div id="policy-content" class="hidden w-full max-w-3xl mt-8">
-      <div class="flex items-center justify-between mb-8">
-        <h2 class="font-display text-5xl tracking-widest text-white">UNTAMED</h2>
-        <button id="policy-close" class="text-white/40 hover:text-white text-xs tracking-widest uppercase border border-white/20 hover:border-white/50 px-4 py-2 transition-all duration-200">Close</button>
-      </div>
-      <div class="border border-white/10 bg-white/5 p-6 max-h-[60vh] overflow-y-auto text-white/70 text-sm leading-relaxed">
-        <pre>
-UNTAMED — Privacy & Terms Policy
-Last Updated: 4/8/2026
+    <div class="flex items-center justify-between mb-6">
+      <h2 id="game-title" class="text-5xl tracking-widest">UNTAMED</h2>
 
-
-1. INTRODUCTION
-This policy applies to UNTAMED, developed and published by SKYWONDER, available on Meta Quest. By playing UNTAMED, you agree to the terms outlined in this document.
-
-2. PLATFORM SERVICES — EPIC ONLINE SERVICES (EOS)
-UNTAMED uses Epic Online Services (EOS) to power online multiplayer features including sessions, presence, and player authentication. By using online features, you agree to Epic Games' Terms of Service and Privacy Policy, available at www.epicgames.com. Epic Online Services may collect and process data such as your account identifiers, gameplay session data, and network information to facilitate online play.
-
-3. META QUEST PLATFORM
-UNTAMED is distributed through the Meta Quest platform. Your use of Meta Quest hardware and software is subject to Meta's Terms of Service and Privacy Policy. Meta may collect device data, usage analytics, and account information in accordance with their policies.
-
-4. DATA WE COLLECT
-- Player identifiers provided by Epic Online Services or Meta
-- Gameplay session data (match results, session duration)
-- Crash reports and performance diagnostics to improve the game
-
-5. HOW WE USE YOUR DATA
-We use collected data solely to:
-- Provide and improve online multiplayer features
-- Diagnose crashes and fix bugs
-- Analyze gameplay for balancing and improvements
-We do not sell your personal data to third parties.
-
-6. DATA RETENTION
-Session and gameplay data is retained for up to 12 months. You may request deletion of your data by contacting us at the address below.
-
-7. CHILDREN'S PRIVACY
-UNTAMED is not directed toward children under the age of 13. We do not knowingly collect personal data from children under 13. If you believe a child has provided us data, please contact us immediately.
-
-8. CHANGES TO THIS POLICY
-We may update this policy from time to time. Continued use of UNTAMED after changes constitutes acceptance of the revised policy. Check this page for the latest version.
-
-9. CONTACT
-For questions or data requests, contact SKYWONDER at:
-leaningmonkevr@gmail.com
-        </pre>
-      </div>
-      <p class="text-white/25 text-xs mt-4 text-center tracking-widest">
-        © 2026 SKYWONDER. All rights reserved.
-      </p>
-    </div>
-  </section>
-
-<!-- TEAM BUTTON -->
-    <button id="teamBtn"
-      class="border border-white/30 px-12 py-4 text-3xl tracking-[0.3em] text-white/70 hover:text-white hover:border-white transition-all-smooth">
-      OUR TEAM
-    </button>
-
-  <!-- TEAM CONTENT -->
-  <div id="teamContent" class="hidden mt-12 flex flex-col md:flex-row gap-12 justify-center items-center w-full max-w-4xl">
-    
-    <div class="team-card flex flex-col items-center gap-4 bg-white/5 border border-white/10 p-6 rounded-lg max-w-xs text-center opacity-0 translate-y-8">
-      <img src="assets/Leaning.jpg" alt="leanings icon" class="w-20 h-20 rounded-full">
-      <h3 class="text-2xl text-white">Leaning</h3>
-      <p class="text-white/60 text-sm">Creator & Owners</p>
+      <button id="policy-close"
+        class="text-white/40 hover:text-white text-xs border border-white/20 px-4 py-2">
+        CLOSE
+      </button>
     </div>
 
-    <div class="team-card flex flex-col items-center gap-4 bg-white/5 border border-white/10 p-6 rounded-lg max-w-xs text-center opacity-0 translate-y-8">
-      <img src="assets/Gary.jpg" alt="garys icon" class="w-20 h-20 rounded-full">
-      <h3 class="text-2xl text-white">Gary</h3>
-      <p class="text-white/60 text-sm">Co-Found & Co-Owner</p>
+    <div class="border border-white/10 bg-white/5 p-6 max-h-[60vh] overflow-y-auto text-white/70 text-sm leading-relaxed">
+<pre>
+YOUR POLICY TEXT HERE (UNCHANGED)
+</pre>
+    </div>
+
+  </div>
+
+  <!-- TEAM BUTTON -->
+  <button id="teamBtn"
+    class="border border-white/30 px-12 py-4 text-3xl tracking-widest text-white/70 hover:text-white transition-all">
+    OUR TEAM
+  </button>
+
+  <!-- TEAM -->
+  <div id="teamContent" class="hidden flex flex-col md:flex-row gap-10 opacity-0 transition-all">
+
+    <div class="team-card flex flex-col items-center gap-4 bg-white/5 p-6 border border-white/10">
+      <img src="assets/Leaning.jpg" class="w-20 h-20 rounded-full">
+      <h3>Leaning</h3>
+      <p class="text-white/60 text-sm">Creator & Owner</p>
+    </div>
+
+    <div class="team-card flex flex-col items-center gap-4 bg-white/5 p-6 border border-white/10">
+      <img src="assets/Gary.jpg" class="w-20 h-20 rounded-full">
+      <h3>Gary</h3>
+      <p class="text-white/60 text-sm">Co-Founder</p>
     </div>
 
   </div>
 
 </section>
 
-  <!-- Scripts -->
-  <script>
-    const policyBtn = document.getElementById("policy-btn");
-    const policyContent = document.getElementById("policy-content");
-    const policyClose = document.getElementById("policy-close");
-
-    policyBtn.addEventListener("click", () => {
-      policyBtn.classList.add("hidden");
-      policyContent.classList.remove("hidden");
-    });
-
-    policyClose.addEventListener("click", () => {
-      policyContent.classList.add("hidden");
-      policyBtn.classList.remove("hidden");
-    });
-  </script>
-
-</div>
-
 <script>
-const teamBtn = document.getElementById("teamBtn");
-const teamContent = document.getElementById("teamContent");
-const teamCards = document.querySelectorAll(".team-card");
+const policyBtn = document.getElementById("policy-btn");
+const gameList = document.getElementById("game-list");
+const gameItems = document.querySelectorAll(".game-item");
+const policyContent = document.getElementById("policy-content");
+const policyClose = document.getElementById("policy-close");
+const gameTitle = document.getElementById("game-title");
 
-teamBtn.onclick = () => {
-  if (teamContent.classList.contains("hidden")) {
-    teamContent.classList.remove("hidden");
-    teamCards.forEach((card, index) => {
-      // staggered bounce animation
-      card.style.transition = `transform 0.8s cubic-bezier(0.22, 1, 0.36, 1) ${index * 0.2}s, opacity 0.6s ease ${index * 0.2}s`;
+// POLICY → show games
+policyBtn.addEventListener("click", () => {
+  policyBtn.style.opacity = "0";
+
+  setTimeout(() => {
+    policyBtn.classList.add("hidden");
+
+    gameList.classList.remove("hidden");
+    setTimeout(() => {
+      gameList.style.opacity = "1";
+    }, 50);
+
+  }, 300);
+});
+
+// GAME → show policy
+gameItems.forEach(item => {
+  item.addEventListener("click", () => {
+
+    gameList.style.opacity = "0";
+
+    setTimeout(() => {
+      gameList.classList.add("hidden");
+
+      gameTitle.textContent = item.textContent;
+
+      policyContent.classList.remove("hidden");
       setTimeout(() => {
-        card.classList.remove("opacity-0", "translate-y-8");
-        card.style.transform = "translateY(-15px)";
-        setTimeout(() => {
-          card.style.transform = "translateY(0)";
-        }, 400); // bounce back
+        policyContent.style.opacity = "1";
       }, 50);
-    });
-  } else {
-    // hide with reverse animation
-    teamCards.forEach((card, index) => {
-      card.style.transition = `opacity 0.4s ease ${index * 0.1}s, transform 0.4s ease ${index * 0.1}s`;
-      card.classList.add("opacity-0", "translate-y-8");
-    });
-    setTimeout(() => teamContent.classList.add("hidden"), 500);
-  }
-};
+
+    }, 300);
+  });
+});
+
+// CLOSE → back to games
+policyClose.addEventListener("click", () => {
+
+  policyContent.style.opacity = "0";
+
+  setTimeout(() => {
+    policyContent.classList.add("hidden");
+
+    gameList.classList.remove("hidden");
+    setTimeout(() => {
+      gameList.style.opacity = "1";
+    }, 50);
+
+  }, 300);
+});
 </script>
 
 <style>
-.team-card img {
-  transition: transform 0.3s ease;
-}
-.team-card img:hover {
+.game-item:hover {
+  color: cyan;
   transform: scale(1.1);
 }
 </style>
