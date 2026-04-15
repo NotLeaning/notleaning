@@ -11,6 +11,11 @@ body { font-family: 'Bebas Neue', sans-serif; }
 .animate-fade-in { animation: fade-in 0.8s ease forwards; }
 .animate-bounce { animation: bounce 1.5s ease-in-out infinite; }
 
+.game-item:hover {
+    color: cyan;
+    transform: scale(1.1);
+}
+
 /* Custom colors if needed */
 :root {
   --background: #000000;
